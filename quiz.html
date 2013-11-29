@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,7 +44,7 @@
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
                 <li><a href="contact.html">Contact</a></li>
               </ul>
             </div>
@@ -71,21 +70,33 @@
           <div id="1" class="panel panel-default">
             <div class="panel-heading">
               <div class="panel-title">
-                Panel content
+                1) What technology that you use everyday has around 100 MEMS (or more if you bought a fancy model) built in?
               </div>
             </div>
             <div class="panel-body">
               <form action="">
                 <div class="radio">
                   <label>
-                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                    Option one is this and that&mdash;be sure to include why it's great
+                    <input type="radio" name="optionsRadios" id="optionsRadios1correct"  checked>
+                    Your Car
                   </label>
                 </div>
                 <div class="radio">
                   <label>
-                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                    Option two can be something else and selecting it will deselect option one
+                    <input type="radio" name="optionsRadios" id="optionsRadios1incorrect">
+                    Your Dog
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios1incorrect" >
+                    Your SmartPhone
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios1incorrect" >
+                    Your Wii
                   </label>
                 </div>
               </form>
@@ -97,28 +108,196 @@
           <div id="2" class="panel panel-default">
             <div class="panel-heading">
               <div class="panel-title">
-                Panel content
+                2) Which city uses a networked system of traffic cameras to automatically relay congestion info to commuters?
               </div>
             </div>
             <div class="panel-body">
               <form action="">
                 <div class="radio">
                   <label>
-                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option1" checked>
-                    Option one is this and that&mdash;be sure to include why it's great
+                    <input type="radio" name="optionsRadios" id="optionsRadios2incorrect" checked>
+                    Mexico City
                   </label>
                 </div>
                 <div class="radio">
                   <label>
-                    <input type="radio" name="optionsRadios" id="optionsRadios4" value="option2">
-                    Option two can be something else and selecting it will deselect option one
+                    <input type="radio" name="optionsRadios" id="optionsRadios2incorrect" >
+                    Chicago
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios2incorrect" >
+                    Orlando
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios2correct" >
+                    Toronto
                   </label>
                 </div>
               </form>
               <p id="p2info"></p>
             </div>
           </div>
-          <a href="javascript: void(0)" onclick="testThem();">CLICK ME</a>
+
+          <div id="3" class="panel panel-default">
+            <div class="panel-heading">
+              <div class="panel-title">
+                3) Which IEEE standard does a new class of wireless devices in your home commonly use?
+              </div>
+            </div>
+            <div class="panel-body">
+              <form action="">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios3correct"  checked>
+                    802.11.5
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios3incorrect" >
+                    FlyBy
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios3incorrect" >
+                    DHCP
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios3incorrectw" >
+                    WiFi
+                  </label>
+                </div>
+              </form>
+              <p id="p3info"></p>
+            </div>
+          </div>
+
+          <div id="4" class="panel panel-default">
+            <div class="panel-heading">
+              <div class="panel-title">
+                4) Approximately how many addresses can IPv6 provide?
+              </div>
+            </div>
+            <div class="panel-body">
+              <form action="">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios4incorrect"  checked>
+                    Enough to address every tree on the earth
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios4incorrect" >
+                    Enough to address every grain of sand on the earth
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios4correct" >
+                    Enough to address all the atoms on the surface of the earth, times 7
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios4incorrect" >
+                    Enough to address every star in the known universe
+                  </label>
+                </div>
+              </form>
+              <p id="p4info"></p>
+            </div>
+          </div>
+
+          <div id="5" class="panel panel-default">
+            <div class="panel-heading">
+              <div class="panel-title">
+                5) How far can an RFID tag broadcast?
+              </div>
+            </div>
+            <div class="panel-body">
+              <form action="">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios5incorrect"  checked>
+                    5 meters
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios5incorrect" >
+                    0 meters, it cannot broadcast
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios5incorrect" >
+                    20 meters
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios5correct" >
+                    All of the above
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios5incorrect" >
+                    None of the above
+                  </label>
+                </div>
+              </form>
+              <p id="p5info"></p>
+            </div>
+          </div>
+
+          <div id="6" class="panel panel-default">
+            <div class="panel-heading">
+              <div class="panel-title">
+                6) Which industry is currently giving consumers IoT-like functionality?
+              </div>
+            </div>
+            <div class="panel-body">
+              <form action="">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios6incorrectw"  checked>
+                    Video Gaming Industry
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios6correct" >
+                    Cellular Industry
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios6incorrect" >
+                    Automobile Industry
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios6incorrect" >
+                    Meat Industry
+                  </label>
+                </div>
+
+              </form>
+              <p id="p6info"></p>
+            </div>
+          </div>
+
+          <a href="javascript: void(0)" onclick="testThem();">Check Answers</a>
 
           
         </div>
@@ -153,21 +332,63 @@
     <script src="js/holder.js"></script>
     <script type="text/javascript">
     function testThem () {
-      if(document.getElementById('optionsRadios1').checked) {
+      if(document.getElementById('optionsRadios1correct').checked) {
         document.getElementById("1").className = "panel panel-success";
-        document.getElementById("p1info").innerHTML = "Some info here";
+        document.getElementById("p1info").innerHTML = "Yep, the automobile industry has been a long time sponsor of the MEMS market.";
       }else {
         document.getElementById("1").className = "panel panel-danger";
-        document.getElementById("p1info").innerHTML = "Some info here";
+        document.getElementById("p1info").innerHTML = "Hint: dogs do not have MEMS.";
       }
 
-      if(document.getElementById('optionsRadios4').checked) {
+      if(document.getElementById('optionsRadios2correct').checked) {
         document.getElementById("2").className = "panel panel-success";
-        document.getElementById("p2info").innerHTML = "Some info here";
+        document.getElementById("p2info").innerHTML = "Right!";
       }else {
         document.getElementById("2").className = "panel panel-danger";
-        document.getElementById("p2info").innerHTML = "Some info here";
+        document.getElementById("p2info").innerHTML = "Farther north.";
       }
+
+      if(document.getElementById('optionsRadios3correct').checked) {
+        document.getElementById("3").className = "panel panel-success";
+        document.getElementById("p3info").innerHTML = "Yes! The industry calls it \"Zigbee\"";
+      }else if(document.getElementById('optionsRadios3incorrectw').checked) {
+        document.getElementById("3").className = "panel panel-danger";
+        document.getElementById("p3info").innerHTML = "Close, but the problem with WiFi is that it uses too much power for connecting everyday, simple objects.";
+      }
+      else {
+        document.getElementById("3").className = "panel panel-danger";
+        document.getElementById("p3info").innerHTML = "No, wrong.";
+      }
+
+      if(document.getElementById('optionsRadios4correct').checked) {
+        document.getElementById("4").className = "panel panel-success";
+        document.getElementById("p4info").innerHTML = "Yep, that's a good approximation of 2^128.";
+      }else {
+        document.getElementById("4").className = "panel panel-danger";
+        document.getElementById("p4info").innerHTML = "moar";
+      }
+
+      if(document.getElementById('optionsRadios5correct').checked) {
+        document.getElementById("5").className = "panel panel-success";
+        document.getElementById("p5info").innerHTML = "Yes! RFID tags can be powered or passive.";
+      }else {
+        document.getElementById("5").className = "panel panel-danger";
+        document.getElementById("p5info").innerHTML = "Nope, sorry.";
+      }
+
+      if(document.getElementById('optionsRadios6correct').checked) {
+        document.getElementById("6").className = "panel panel-success";
+        document.getElementById("p6info").innerHTML = "Yes! Cellular phones give consumers access to the Internet of Things";
+      }else if(document.getElementById('optionsRadios6incorrectw').checked) {
+        document.getElementById("6").className = "panel panel-danger";
+        document.getElementById("p6info").innerHTML = "Close, but we have not seen true IoT functionality from this industry even with objects like the Oculus Rift.";
+      }
+      else {
+        document.getElementById("6").className = "panel panel-danger";
+        document.getElementById("p6info").innerHTML = "No, wrong.";
+      }
+
+
     }</script>
   </body>
   </html>
