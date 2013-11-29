@@ -92,6 +92,19 @@
 
       <hr class="featurette-divider">
 
+      <div class="row featurette">
+        <div class="col-md-8">
+          <h2 class="featurette-heading">Robotic information sharing</h2>
+          <p class="lead">How machines will solve new problems around the home. Problems that these machines have never seen before.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <a id="inline" href="#robosharing-popup"><img class="featurette-image img-responsive" src="http://img.gawkerassets.com/img/18k27ozt33jlljpg/ku-xlarge.jpg" alt="Photovoltaic energy harvesting" height="300" width="300"></a>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
 
       <!-- /END THE FEATURETTES -->
 
@@ -101,7 +114,7 @@
       <p>Why is this important? The internet of things requires for many devices to be running and they all nedd power to run.</p>
       <p>
         Want to read more?<br/>
-        <a href="http://www.energyharvestingjournal.com/articles/battery-free-mobile-devices-draw-power-from-thin-air-00005735.asp?sessionid=1">Power free transmission.</a><br/><a href="http://www.internet-of-things-research.eu/pdf/Converging_Technologies_for_Smart_Environments_and_Integrated_Ecosystems_IERC_Book_Open_Access_2013.pdf">Energy harvesting</a><br/><a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6494546&tag=1">More energy harvesting</a></p>
+        <a href="http://www.energyharvestingjournal.com/articles/battery-free-mobile-devices-draw-power-from-thin-air-00005735.asp?sessionid=1">Power free transmission.</a><br/><a href="http://www.internet-of-things-research.eu/pdf/Converging_Technologies_for_Smart_Environments_and_Integrated_Ecosystems_IERC_Book_Open_Access_2013.pdf">Energy harvesting</a><br/><a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=6494546&amp;tag=1">More energy harvesting</a></p>
       </div></div>
 
       <div style="display:none"><div id="data-popup">
@@ -109,12 +122,15 @@
         <iframe width="560" height="315" src="//www.youtube.com/embed/Q-4jQd15G7Y" frameborder="0" allowfullscreen></iframe>
       </div></div>
 
-      
+      <div style="display:none"><div id="robosharing-popup">
+        <p>﻿In the future the devices in your home, such as automatic hoovers and cooker will be able to look up information on an internet designed just for robots. This might take the form of a forum or a wiki system for computers so they can query about tasks they are trying to perform. This will allow a device to complete a task it previously did not know how to complete by asking other computers on the internet. This will allow our home devices to become more intelligent and perform more complex tasks by crowd sourcing learning for a specific task. This means that robots can be made more simple and more cheaply with the computation being completed by the cloud.</p>
+        <iframe width="560" height="315" src="//www.youtube.com/embed/4-ir1ieqKyc" frameborder="0" allowfullscreen></iframe><br/><p><a href="http://www.sciencedirect.com/science/article/pii/S0262407911603783">Learn more here</a></P>
+      </div></div>      
 
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2013 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a herf="#">Terms</a></p>
+        <p>The Internet Of Things</p>
       </footer>
 
     </div><!-- /.container -->
@@ -137,7 +153,10 @@
       /* Using custom settings */
 
       $("a#inline").fancybox({
-        'hideOnContentClick': true
+        'hideOnContentClick': true,
+        'autoSize'    : false,
+        'autoScale'         : false,
+        'width'       : 600
       });
 
       /* Apply fancybox to multiple items */
@@ -147,7 +166,11 @@
         'transitionOut' : 'elastic',
         'speedIn'   : 600, 
         'speedOut'    : 200, 
-        'overlayShow' : false
+        'overlayShow' : false,
+        'hideOnContentClick': true,
+        'autoSize'    : false,
+        'autoScale'         : false,
+        'width'       : 400
       });
 
     });
