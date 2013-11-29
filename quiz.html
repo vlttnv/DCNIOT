@@ -291,6 +291,82 @@
             </div>
           </div>
 
+           <div id="7" class="panel panel-default">
+            <div class="panel-heading">
+              <div class="panel-title">
+                7) Which energy harvesting technique is considered more robust?
+              </div>
+            </div>
+            <div class="panel-body">
+              <form action="">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios7incorrect"  checked>
+                    Pesio
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios7incorrect" >
+                    Thermal
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios7correct" >
+                    Photovoltaic
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios7incorrect" >
+                    Mechanical
+                  </label>
+                </div>
+
+              </form>
+              <p id="p7info"></p>
+            </div>
+          </div>
+
+          <div id="8" class="panel panel-default">
+            <div class="panel-heading">
+              <div class="panel-title">
+                8) How would a robot solve a problem?
+              </div>
+            </div>
+            <div class="panel-body">
+              <form action="">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios8correct"  checked>
+                    Look it up on the robot-only internet
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios8incorrect" >
+                    Ask its human master.
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios8incorrect" >
+                    Not solve the problem.
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios8incorrect" >
+                    Try and try again utnil it gets it right.
+                  </label>
+                </div>
+
+              </form>
+              <p id="p8info"></p>
+            </div>
+          </div>
+
           <a href="javascript: void(0)" onclick="testThem();" class="btn btn-info">Check Answers</a>
 
           
@@ -380,6 +456,22 @@
       else {
         document.getElementById("6").className = "panel panel-danger";
         document.getElementById("p6info").innerHTML = "No, wrong.";
+      }
+
+      if(document.getElementById('optionsRadios7correct').checked) {
+        document.getElementById("7").className = "panel panel-success";
+        document.getElementById("p7info").innerHTML = "Yes! Photovoltaic are currently more efficent per space.";
+      }else {
+        document.getElementById("7").className = "panel panel-danger";
+        document.getElementById("p7info").innerHTML = "Nope, sorry.";
+      }
+
+      if(document.getElementById('optionsRadios8correct').checked) {
+        document.getElementById("8").className = "panel panel-success";
+        document.getElementById("p5info").innerHTML = "Yes! Robots will store solved problems in the cloud.";
+      }else {
+        document.getElementById("8").className = "panel panel-danger";
+        document.getElementById("p5info").innerHTML = "Nope, sorry.";
       }
 
 
