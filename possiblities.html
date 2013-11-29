@@ -164,7 +164,7 @@
     <script type="text/javascript" src="fancybox/jquery.fancybox.pack.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/holder.js"></script>
-    <script>
+   <script>
     $(document).ready(function() {
 
       /* This is basic - uses default settings */
@@ -174,7 +174,10 @@
       /* Using custom settings */
 
       $("a#inline").fancybox({
-        'hideOnContentClick': true
+        'hideOnContentClick': true,
+        'autoSize'    : false,
+        'autoScale'         : false,
+        'width'       : 600
       });
 
       /* Apply fancybox to multiple items */
@@ -184,7 +187,11 @@
         'transitionOut' : 'elastic',
         'speedIn'   : 600, 
         'speedOut'    : 200, 
-        'overlayShow' : false
+        'overlayShow' : false,
+        'hideOnContentClick': true,
+        'autoSize'    : false,
+        'autoScale'         : false,
+        'width'       : 400
       });
 
     });

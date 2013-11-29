@@ -233,7 +233,10 @@
       /* Using custom settings */
 
       $("a#inline").fancybox({
-        'hideOnContentClick': true
+        'hideOnContentClick': true,
+        'autoSize'    : false,
+        'autoScale'         : false,
+        'width'       : 600
       });
 
       /* Apply fancybox to multiple items */
@@ -243,7 +246,11 @@
         'transitionOut' : 'elastic',
         'speedIn'   : 600, 
         'speedOut'    : 200, 
-        'overlayShow' : false
+        'overlayShow' : false,
+        'hideOnContentClick': true,
+        'autoSize'    : false,
+        'autoScale'         : false,
+        'width'       : 400
       });
 
     });
