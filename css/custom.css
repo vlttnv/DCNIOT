@@ -149,6 +149,14 @@ body {
   background-size: cover;
   background-position: center center;
 }
+.secondSlide {
+  overflow: hidden;
+  background-image: url("../images/future.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-size: cover;
+  background-position: center center;
+}
 .spec {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
