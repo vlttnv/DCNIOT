@@ -41,14 +41,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#">Project name</a>
+              <a class="navbar-brand" href="index.html">The Internet Of Things</a>
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li class="dropdown">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+<!--                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
                   <ul class="dropdown-menu">
                     <li><a href="#">Action</a></li>
@@ -59,7 +59,7 @@
                     <li><a href="#">Separated link</a></li>
                     <li><a href="#">One more separated link</a></li>
                   </ul>
-                </li>
+                </li> -->
               </ul>
             </div>
           </div>
@@ -86,7 +86,7 @@
       
       <div class="row featurette">
         <div class="col-md-8">
-          <h2 class="featurette-heading">Sensor Technology</h2>
+          <a id="inline" href="#sensor-popup"><h2 class="featurette-heading">Sensor Technology</h2></a>
           <p class="lead">MEMS (microelectrical mechanical systems) comprise a wide range of new mechanical technologies being developed today and which will play a key role in the IoT. 
           </p>
         </div>
@@ -102,7 +102,7 @@
           <a id="inline" href="#metcalf-popup"><img class="featurette-image img-responsive" src="images/current_industry/metcalf.png" alt="More heavily used networks have more intensic value." ></a>
         </div>
         <div class="col-md-8">
-          <h2 class="featurette-heading">Metcalf's Law</h2>
+          <a id="inline" href="#metcalf-popup"><h2 class="featurette-heading">Metcalf's Law</h2></a>
           <p class="lead">What is Metcalf's Law? It will certainly help explain the importance of connecting as many 'things' to the Internet of Things. Click the image to find out more.</p>
         </div>
       </div>
@@ -111,7 +111,7 @@
 
       <div class="row featurette">
         <div class="col-md-8">
-          <h2 class="featurette-heading">RFID</h2>
+          <a id="inline" href="#rfid-popup"><h2 class="featurette-heading">RFID</h2></a>
           <p class="lead">How do we establish uniqueness on the Internet of Things? The one current solution that is commonly used in industry is Radio Frequency ID tags which have been standardized and widely adopted across many industries, providing unexpected benefits.</p>
         </div>
         <div class="col-md-4">
@@ -126,7 +126,7 @@
           <a id="inline" href="#walmart-popup"><img class="featurette-image img-responsive" src="images/current_industry/walmart.jpg" alt="Walmart uses the IoT" height="300" width="300"></a>
         </div>
         <div class="col-md-8">
-          <h2 class="featurette-heading">Walmart and the IoT</h2>
+          <a id="inline" href="#walmart-popup"><h2 class="featurette-heading">Walmart and the IoT</h2></a>
           <p class="lead">To keep supplying its customers with the lowest prices, <strike>Sprawlmart</strike> Walmart has been leading the way in an IoT-style inventory management scheme.</p>
         </div>
       </div>
@@ -134,9 +134,9 @@
 
       <div class="row featurette">
         <div class="col-md-8">
-          <h2 class="featurette-heading">IPv4 versus IPv6</h2>
+          <a id="inline" href="#ipv-popup"><h2 class="featurette-heading">IPv4 versus IPv6</h2></a>
           <p class="lead">It was in the primordial era of ARPAnet which the internet and the IPv4 standard was conceived. Unfortunately, the designers of ARPAnet were researchers who could not predict the massive scaling that the internet would undergo to meet the demands of our modern internetcentric world.</p>
-          <div style="width: 50%; margin: 0 auto;">
+          <div class="col-md-4 col-md-offset-4" >
             <!-- IPv6-test.com widget BEGIN -->
             <script type="text/javascript">var _ipv6test_widget_style = {
             border: "solid 1px #000",
@@ -154,7 +154,7 @@
             stats_color_v6: "#fff",
             stats_background_color: "#666"
             }</script>
-
+            
             <div id="_ipv6test_widget" style="width:250px;display:none;margin:0auto;">loading <a href="http://ipv6-test.com/">IPv6 connection test</a> ...</div><script type="text/javascript" src="http://ipv6-test.com/api/widget.php?domain=referer" async="async"></script>
             <!-- IPv6-test.com widget END -->
           </div>
@@ -179,10 +179,13 @@
       </div></div>
 
       <div style="display:none"><div id="rfid-popup">
-        <p>If everything is to connect to the internet, then the internet will need to distinguish between one thing from another thing. Seems obvious right? We’re all familiar with the concept of IP addresses to uniquely distinguish me at my tablet from you at your laptop, but this is actually a fairly rare case of interaction. On the internet of things, the majority of interactions will be machine to machine. Further, most of these machines may actually be passive entities. Think of all the things which only need to passively exist in the physical world and cyber world; things like a package containing your order from Amazon. Its uniqueness is important because you wouldn’t want to check the tracking info for the package and be told that it’s in Mumbai simply because there are two packages in the world with the same digital identity. And unless you are a control freak, it would be overkill if your package had a built in GPS unit and could tell you exactly where it was when you looked it up on your  smartphone. This realm of identification, having a unique digital address or type identifier, is currently being taken up by RFID, a technology which is key to the future of the IoT.</p>
+        <div class="col-md-6"><img src="images/rfid.png" class="img-responsive"></div>
+        <div class="col-md-6"><p>If everything is to connect to the internet, then the internet will need to distinguish between one thing from another thing. Seems obvious right? We’re all familiar with the concept of IP addresses to uniquely distinguish me at my tablet from you at your laptop, but this is actually a fairly rare case of interaction. On the internet of things, the majority of interactions will be machine to machine. Further, most of these machines may actually be passive entities. Think of all the things which only need to passively exist in the physical world and cyber world; things like a package containing your order from Amazon. Its uniqueness is important because you wouldn’t want to check the tracking info for the package and be told that it’s in Mumbai simply because there are two packages in the world with the same digital identity. And unless you are a control freak, it would be overkill if your package had a built in GPS unit and could tell you exactly where it was when you looked it up on your  smartphone. This realm of identification, having a unique digital address or type identifier, is currently being taken up by RFID, a technology which is key to the future of the IoT.</p>
         <p>RFID, “Radio Frequency Identification”, has been around for a while. In fact, it has its origins in technology developed during World War II. RFID tags are small chips that can broadcast information at a set radio frequency. They can be powered, continuously broadcasting their identification message, or unpowered, requiring a powered device to first charge the tag using a strong electric field. RFID has the advantage over barcodes in that they can be scanned without a clear line of site and they can contain real time data. Various protocols exist for RFID and different countries have different radio frequency bands allocated for use by devices like RFID, which makes the standardization challenging. Recently, the push to standardize and mass produce RFID has fallen on the shoulders of one man, Kevin Ashton. A british technology seer, Ashton claims to be the first human to utter the term, “Internet of Things”. Claims aside, his work has been to create a global standard of RFID in conjunction with researchers at MIT. In his words, the role RFID plays in the IoT is, “...to enable computers to observe, identify and understand the world—without the limitations of human-entered data.” Ashton helped standard the Electronic Product Code, one of the most important protocols for identifying products being transported along a supply chain of say, Tesco or Walmart.</p>
         <p>Currently, several major corporations use RFID in supply chain management, animal tracking, personnel and vehicle tracking, and fun things like checking into and tagging photos from social events. Since mass production of the cheapest, passive RFID tags has driven the price down to less than 5 cents a tag, RFID will continue to find its way into new domains. <a id="in-line" href="#walmart-popup" >To learn about an example of how Walmart uses RFID to increase its efficiency, check out our Walmart IoT blurb.</a></p>
-        <p>At the current time, it RFID is context specific. That is, you may be able to read an RFID and get all the bits it has to transmit, but if you feed that data to a social media app when the ID is for a FedEx package tracking system, it will probably do you no good because your social media app knows nothing about the how to interpret those bits. As standardization of RFID continues and the IoT becomes larger, we may see a universal protocol for RFID like we have for addressing of computers over the internet. </p>
+        <p>At the current time, it RFID is context specific. That is, you may be able to read an RFID and get all the bits it has to transmit, but if you feed that data to a social media app when the ID is for a FedEx package tracking system, it will probably do you no good because your social media app knows nothing about the how to interpret those bits. As standardization of RFID continues and the IoT becomes larger, we may see a universal protocol for RFID like we have for addressing of computers over the internet. </p></div>
+        
+        
       </div></div>
 
       <div style="display:none"><div id="walmart-popup">
