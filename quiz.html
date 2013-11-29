@@ -61,10 +61,64 @@
     <div class="container" style="margin-top: 100px;">
       <div class="row">
         <div class="col-md-6" style="font-size: 1.6em;">
-          <!--Write some about content here -->
+          <div id="results">
+
+          </div>
+
         </div>
         <div class="col-md-6">
 
+          <div id="1" class="panel panel-default">
+            <div class="panel-heading">
+              <div class="panel-title">
+                Panel content
+              </div>
+            </div>
+            <div class="panel-body">
+              <form action="">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                    Option one is this and that&mdash;be sure to include why it's great
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                    Option two can be something else and selecting it will deselect option one
+                  </label>
+                </div>
+              </form>
+            </div>
+          </div>
+
+
+          <div id="2" class="panel panel-default">
+            <div class="panel-heading">
+              <div class="panel-title">
+                Panel content
+              </div>
+            </div>
+            <div class="panel-body">
+              <form action="">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option1" checked>
+                    Option one is this and that&mdash;be sure to include why it's great
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios4" value="option2">
+                    Option two can be something else and selecting it will deselect option one
+                  </label>
+                </div>
+              </form>
+            </div>
+          </div>
+          <a href="javascript: void(0)" onclick="testThem();">CLICK ME</a>
+
+          
         </div>
       </div>
     </div>
@@ -95,5 +149,20 @@
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/holder.js"></script>
+    <script type="text/javascript">
+    function testThem () {
+      if(document.getElementById('optionsRadios1').checked) {
+        document.getElementById("1").className = "panel panel-success";
+      }else {
+        document.getElementById("1").className = "panel panel-danger";
+      }
+
+      if(document.getElementById('optionsRadios4').checked) {
+        document.getElementById('results').innerHTML = "<h1>Yay</h2>"
+        document.getElementById("2").className = "panel panel-success";
+      }else {
+        document.getElementById("2").className = "panel panel-danger";
+      }
+    }</script>
   </body>
   </html>
