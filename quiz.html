@@ -367,6 +367,75 @@
             </div>
           </div>
 
+          <div id="9" class="panel panel-default">
+            <div class="panel-heading">
+              <div class="panel-title">
+                9) To acheive a smart grid in the UK what technology is the government hoping to have in place by 2020?
+              </div>
+            </div>
+            <div class="panel-body">
+              <form action="">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios9incorrect"  checked>
+                    Smart Power Lines to reduce power loss
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios9correct" >
+                    Smart Meters
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios9incorrect" >
+                    User Tracking to predict usage patterns
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios9incorrect" >
+                    All of the above
+                  </label>
+                </div>
+
+              </form>
+              <p id="p9info"></p>
+            </div>
+          </div>
+
+          <div id="10" class="panel panel-default">
+            <div class="panel-heading">
+              <div class="panel-title">
+                10) Security and privacy are very important concerns for the Internet of Things but in which area are they more a concern? 
+              </div>
+            </div>
+            <div class="panel-body">
+              <form action="">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios10incorrect"  checked>
+                    Industry
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios10incorrect" >
+                    Consumer
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios10correct" >
+                    Both
+                  </label>
+                </div>
+              </form>
+              <p id="p10info"></p>
+            </div>
+          </div>
+
           <a href="javascript: void(0)" onclick="testThem();" class="btn btn-info">Check Answers</a>
 
           
@@ -456,6 +525,13 @@
       else {
         document.getElementById("6").className = "panel panel-danger";
         document.getElementById("p6info").innerHTML = "No, wrong.";
+
+
+
+
+
+
+
       }
 
       if(document.getElementById('optionsRadios7correct').checked) {
@@ -474,6 +550,22 @@
         document.getElementById("p8info").innerHTML = "Nope, sorry.";
       }
 
+      if(document.getElementById('optionsRadios9correct').checked) {
+        document.getElementById("9").className = "panel panel-success";
+        document.getElementById("p9info").innerHTML = "Correct, the UK government is tasking energy providers to have smart meters installed in every home and small business by 2020!";
+      }else {
+        document.getElementById("9").className = "panel panel-danger";
+        document.getElementById("p9info").innerHTML = "Not quite, think about how energy is measured ...";
+      }
+
+
+      if(document.getElementById('optionsRadios10correct').checked) {
+        document.getElementById("10").className = "panel panel-success";
+        document.getElementById("p10info").innerHTML = "Correct, privacy and security are very important in both domains!";
+      }else {
+        document.getElementById("10").className = "panel panel-danger";
+        document.getElementById("p10info").innerHTML = "Hmm really your just going to discount the other ...";
+      }
 
     }</script>
   </body>
