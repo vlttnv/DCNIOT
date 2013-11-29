@@ -167,7 +167,7 @@
 
       <!-- /END THE FEATURETTES -->
 
-      <div style="display:none"><div id="sensor-popup">
+      <div style="display:none;"><div id="sensor-popup">
         <p>MEMS comprises a wide range of microsensors which are built into an electric circuit, giving it both physical world detection capabilities as well as the ability to preprocess this data before sending it off to the computer system at large. Further, MEMS can also be mechanical devices which can manipulate the world. This can be anything from small gearing systems to channels which disrupt electric frequency output. Every time you get into a car, there are hundreds of MEMS sensors protecting you. They control airbag deployment, sense tire pressure, fuel pressure, car occupancy, and occupant weight. You are probably also familiar with the MEMS sensors inside of your phone which allow it to sense vibration and orientation. MEMS devices are becoming more sophisticated. In biological applications, scientists can grow individual cells in massive arrays of microscopic pools which are irrigated by MEMS devices. It sounds like science fiction, but these technologies will progress and become integrated into all sorts of internet enabled devices.</p>
         <p>The increased use of MEMS in consumer electronics has driven the <a href="http://www.digikey.com/supply-chain-hq/us/en/articles/semiconductors/mems-market-grows-as-prices-decline/1058">price down</a>. This trend will likely continue and people will find novel uses for MEMS with or without the aid of the IoT.</p>
       </div></div>
@@ -221,7 +221,10 @@
       /* Using custom settings */
 
       $("a#inline").fancybox({
-        'hideOnContentClick': true
+        'hideOnContentClick': true,
+        'autoSize'    : false,
+        'autoScale'         : false,
+        'width'       : 600
       });
 
       /* Apply fancybox to multiple items */
@@ -231,7 +234,11 @@
         'transitionOut' : 'elastic',
         'speedIn'   : 600, 
         'speedOut'    : 200, 
-        'overlayShow' : false
+        'overlayShow' : false,
+        'hideOnContentClick': true,
+        'autoSize'    : false,
+        'autoScale'         : false,
+        'width'       : 400
       });
 
     });
