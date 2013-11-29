@@ -46,7 +46,7 @@
               <ul class="nav navbar-nav">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li class="active"><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -89,6 +89,7 @@
                   </label>
                 </div>
               </form>
+              <p id="p1info"></p>
             </div>
           </div>
 
@@ -114,6 +115,7 @@
                   </label>
                 </div>
               </form>
+              <p id="p2info"></p>
             </div>
           </div>
           <a href="javascript: void(0)" onclick="testThem();">CLICK ME</a>
@@ -153,15 +155,18 @@
     function testThem () {
       if(document.getElementById('optionsRadios1').checked) {
         document.getElementById("1").className = "panel panel-success";
+        document.getElementById("p1info").innerHTML = "Some info here";
       }else {
         document.getElementById("1").className = "panel panel-danger";
+        document.getElementById("p1info").innerHTML = "Some info here";
       }
 
       if(document.getElementById('optionsRadios4').checked) {
-        document.getElementById('results').innerHTML = "<h1>Yay</h2>"
         document.getElementById("2").className = "panel panel-success";
+        document.getElementById("p2info").innerHTML = "Some info here";
       }else {
         document.getElementById("2").className = "panel panel-danger";
+        document.getElementById("p2info").innerHTML = "Some info here";
       }
     }</script>
   </body>
